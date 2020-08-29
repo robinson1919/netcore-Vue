@@ -1,0 +1,9 @@
+C:\Users\ROBIN\OneDrive\Escritorio\netcore-Vue\Demo\Demo.Entities\bin\Debug\netcoreapp2.1\Demo.Entities.deps.json
+C:\Users\ROBIN\OneDrive\Escritorio\netcore-Vue\Demo\Demo.Entities\bin\Debug\netcoreapp2.1\Demo.Entities.dll
+C:\Users\ROBIN\OneDrive\Escritorio\netcore-Vue\Demo\Demo.Entities\bin\Debug\netcoreapp2.1\Demo.Entities.pdb
+C:\Users\ROBIN\OneDrive\Escritorio\netcore-Vue\Demo\Demo.Entities\obj\Debug\netcoreapp2.1\Demo.Entities.csproj.CoreCompileInputs.cache
+C:\Users\ROBIN\OneDrive\Escritorio\netcore-Vue\Demo\Demo.Entities\obj\Debug\netcoreapp2.1\Demo.Entities.AssemblyInfoInputs.cache
+C:\Users\ROBIN\OneDrive\Escritorio\netcore-Vue\Demo\Demo.Entities\obj\Debug\netcoreapp2.1\Demo.Entities.AssemblyInfo.cs
+C:\Users\ROBIN\OneDrive\Escritorio\netcore-Vue\Demo\Demo.Entities\obj\Debug\netcoreapp2.1\Demo.Entities.dll
+C:\Users\ROBIN\OneDrive\Escritorio\netcore-Vue\Demo\Demo.Entities\obj\Debug\netcoreapp2.1\Demo.Entities.pdb
+C:\Users\ROBIN\OneDrive\Escritorio\netcore-Vue\Demo\Demo.Entities\obj\Debug\netcoreapp2.1\Demo.Entities.csprojAssemblyReference.cache
