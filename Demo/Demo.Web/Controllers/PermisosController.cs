@@ -117,7 +117,8 @@ namespace Demo.Web.Controllers
                 id_tipo_permiso = model.id_tipo_permiso,
                 nombre_empleado = model.nombre_empleado,
                 apellido_empleado = model.apellido_empleado,
-                estado = true
+                fecha_permiso = DateTime.Now,
+                estado = true                
             };
 
             _context.Permisos.Add(permiso);

@@ -93,65 +93,40 @@
                     <v-container>
                         <v-form ref="form" v-model="valid">
                         <v-row>
-                            <v-col cols="6" sm="6" md="6">
-                            <v-text-field 
-                                :class="{ 'hasError': $v.editedItem.nombre.$error }" 
-                                v-model="editedItem.nombre"
-                                :rules="codeRules" 
-                                label="Nombre"
-                                required
-                            ></v-text-field>
+                            <v-col cols="12" sm="12" md="12">   
+                                <v-text-field 
+                                    :class="{ 'hasError': $v.editedItem.nombre_empleado.$error }" 
+                                    v-model="editedItem.nombre_empleado"
+                                    :rules="codeRules" 
+                                    label="Nombre del empleado"
+                                    required
+                                ></v-text-field>
                             </v-col> 
-
-                            <v-col cols="6" sm="6" md="6">
-                            <v-text-field 
-                                v-model="editedItem.telefono" 
-                                label="Numero de telefono"
-                            ></v-text-field>
-                            </v-col>                                      
                         </v-row>
+
+                        <v-row>
+                            <v-col cols="12" sm="12" md="12">   
+                                <v-text-field 
+                                    :class="{ 'hasError': $v.editedItem.nombre_empleado.$error }" 
+                                    v-model="editedItem.apellido_empleado" 
+                                    label="Apellido del empleado"
+                                    required
+                                ></v-text-field>
+                            </v-col> 
+                        </v-row>
+                                                                 
+                        
                         
                         <v-row>  
-                            <v-col cols="6" sm="6" md="6">                      
-                            <v-select
-                                :class="{ 'hasError': $v.editedItem.tipo_documento.$error }"
-                                :items="tipoDoc"                        
-                                v-model="editedItem.tipo_documento"
-                                :rules="categoriaRules"
-                                label="Tipo de documento"
-                                required
-                            ></v-select>                      
-                            </v-col>             
-
-                            <v-col cols="6" sm="6" md="6">
-                            <v-text-field 
-                                v-model="editedItem.num_documento" 
-                                :counter="11"
-                                :rules="nombreRules"
-                                label="Numero de documento"
-                                required
-                            ></v-text-field>                    
-                            </v-col>                   
-                        </v-row>
-                        
-                        
-                        <v-row>
-                            <v-col cols="6" sm="6" md="6">
-                            <v-text-field 
-                                v-model="editedItem.direccion"                         
-                                label="Direccion"
-                            ></v-text-field>
-                            </v-col> 
-
-                            <v-col cols="6" sm="6" md="6">
-                            <v-text-field 
-                                v-model="editedItem.email" 
-                                label="Email"
-                            ></v-text-field>
-                            </v-col>                    
-                        </v-row>
-
-                        
+                            <v-col cols="12" sm="12" md="12">                      
+                                <v-select
+                                    :class="{ 'hasError': $v.editedItem.id_tipo_permiso.$error }"          
+                                    v-model="editedItem.id_tipo_permiso"
+                                    label="Tipo de Permiso"
+                                    required
+                                ></v-select>                      
+                            </v-col>                  
+                        </v-row>                     
                                             
                         
 
@@ -202,7 +177,11 @@ export default {
         //
         
         valid: false,
-        editedItem: {},
+        editedItem: {
+            id_tipo_permiso: "",
+            nombre_empleado: "",
+            apellido_empleado: "",            
+        },
         search: '',
         dialog: false,
         tipo_permiso: [],
@@ -215,7 +194,7 @@ export default {
     }),
     computed: {
       formTitle () {
-        return this.editedIndex === -1 ? 'Agregar Cliente' : 'Editar Cliente'
+        return this.editedIndex === -1 ? 'Agregar Permiso' : 'Editar Permiso'
       },
     },
     mounted() {
